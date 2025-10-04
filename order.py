@@ -8,7 +8,7 @@ tax_rate = 7.5 # Float
 
 # Order Form: Order Selection and Calculations
 def order(e):
-    document.getElementById('output').innerHTML = "" # Clear Output
+    document.getElementById('summary').innerHTML = "" # Clear Output
 
     total = 0.0 # Float
 
@@ -32,11 +32,11 @@ def order(e):
     customer_number = document.getElementById("customerNumber").value.strip() # Integer
 
     if not customer_name or not customer_address or not customer_number:
-        display("Please enter all required fields before checkout.", target="output")
+        display("Please enter all required fields before checkout.", target="summary")
         return
 
     # Display Order Summary and Total Order
-    display(f"Order for: {customer_name}", target="output")
-    display(f"Address: {customer_address}", target="output")
-    display(f"Contact Number: {customer_number}", target="output")
-    display(f"Total: ₱{total:.1f}", target="output")
+    display(f"Order for: {customer_name}", target="summary")
+    display(f"Address: {customer_address}", target="summary")
+    display(f"Contact Number: {customer_number}", target="summary")
+    display(f"Total: ₱{total:.1f}", target="summary")

@@ -58,6 +58,11 @@ body {
     text-align: center;
 }
 
+.menu_img {
+    width: 70px;
+    border-radius: 15px;
+}
+
 .contact {
     text-align: center;
     padding: 20px;

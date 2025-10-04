@@ -16,7 +16,7 @@ email_address = "Email Addresses"  # String
 email_address_description1 = "info@sweetchoi.com"  # String
 email_address_description2 = "career@sweetchoi.com"  # String
 email_address_description3 = "support@sweetchoi.com"  # String
-business_hours = "Open: 12:00 PM - 9:00 PM" # String
+business_hours = "Open Daily: 12:00 PM - 9:00 PM" # String
 
 # Contact Us: Information
 display(f"{contact_us}", target = "contact_us")
@@ -37,4 +37,3 @@ display(f"{email_address_description2}", target = "email_address_description2")
 display(f"{email_address_description3}", target = "email_address_description3")
 
 display(f"{business_hours}", target = "business_hours")
-

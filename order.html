@@ -59,21 +59,33 @@
             <div class="col-md-6">
                 <form>
                     <h4>Menu:</h4>
+                    <img src="https://www.baking-sense.com/wp-content/uploads/2017/11/fondant-featured.jpg" class="menu_img">
+                    <br>
                         <input class="form-check-input" type="checkbox" id="FondantCake">
                         <label class="form-check-label">Fondant Cake (₱349.0)</label>
                         <br><br>
+                    <img src="https://waringsbakery.co.uk/wp-content/uploads/2023/10/warings-820x820__0007_Warings-85.jpg" class="menu_img">
+                    <br>
                         <input class="form-check-input" type="checkbox" id="SweetCupcakes">
                         <label class="form-check-label">Sweet Cupcakes (₱70.0)</label>
                         <br><br>
+                    <img src="https://thedinnerbell.recipes/wp-content/uploads/2024/07/Double-Chocolate-Chip-Cookies-Soft-Double-Chocolate-Chip-Cookies-33663.jpg" class="menu_img">
+                    <br>
                         <input class="form-check-input" type="checkbox" id="ChocolateCookies">
                         <label class="form-check-label">Chocolate Cookies (₱60.0)</label>
                         <br><br>
+                    <img src="https://img.pikbest.com/photo/20240808/delightful-vanilla-sundae-with-hot-fudge-whipped-cream-and-nuts_10710852.jpg!bw700" class="menu_img">
+                    <br>
                         <input class="form-check-input" type="checkbox" id="VanilaSundae">
                         <label class="form-check-label">Vanila Sundae (₱75.0)</label>
                         <br><br>
+                    <img src="https://myrecipereviews.com/wp-content/uploads/2019/04/IMG_4568a.jpg" class="menu_img">
+                    <br>
                         <input class="form-check-input" type="checkbox" id="FlavoredBread">
                         <label class="form-check-label">Flavored Bread (₱80.0)</label>
                         <br><br>
+                    <img src="https://thumbs.dreamstime.com/b/many-colorful-delicious-pastries-cakes-glass-showcase-pastry-shop-close-up-appetizing-pastel-sweet-desserts-many-247022962.jpg" class="menu_img">
+                    <br>
                         <input class="form-check-input" type="checkbox" id="ChoisSpecial">
                         <label class="form-check-label">Choi's Special (₱456.0)</label>
                 </form>
@@ -82,10 +94,13 @@
             <div class="col-md-6">
                 <form>
                     <h4>Customer Details:</h4>
+                        <label for="customerName">Name:</label>
                         <input type="text" class="form-control" id="customerName" placeholder="Enter your name...">
                         <br>
+                        <label for="customerName">Address:</label>
                         <input type="text" class="form-control" id="customerAddress" placeholder="Enter your address...">
                         <br>
+                        <label for="customerNumber">Phone Number:</label>
                         <input type="number" class="form-control" id="customerNumber" placeholder="Enter your phone number...">
                         <br>
                         <input type="button" class="btn btn-light" value="Create Order" id="login" py-click="order">
@@ -93,7 +108,10 @@
                 <br>
             </div>
             <hr>
-            <div id="output"></div>
+            <div id="output">
+                <h4>Order Summary:</h4>
+                <div id="summary"></div>
+            </div>
         </div>
     </div>
 
@@ -106,5 +124,10 @@
 
     <!-- PYSCRIPT -->
     <script type="py" src="order.py"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 </html>
