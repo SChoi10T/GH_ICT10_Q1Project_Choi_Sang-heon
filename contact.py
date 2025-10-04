@@ -1,5 +1,5 @@
 # Contact Page Script
-from pyscript import display, document # pyright: ignore[reportMissingImports]
+from pyscript import display # pyright: ignore[reportMissingImports]
 
 # Variables
 # Contact Information
@@ -18,8 +18,6 @@ email_address_description2 = "career@sweetchoi.com"  # String
 email_address_description3 = "support@sweetchoi.com"  # String
 business_hours = "Open: 12:00 PM - 9:00 PM" # String
 
-display(f"{business_hours}", target = "business_hours")
-
 # Contact Us: Information
 display(f"{contact_us}", target = "contact_us")
 display(f"{contact_description}", target = "contact_description")
@@ -37,3 +35,5 @@ display(f"{email_address}", target = "email_address")
 display(f"{email_address_description1}", target = "email_address_description1")
 display(f"{email_address_description2}", target = "email_address_description2")
 display(f"{email_address_description3}", target = "email_address_description3")
+
+display(f"{business_hours}", target = "business_hours")
